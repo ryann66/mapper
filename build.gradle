@@ -1,0 +1,65 @@
+/// ***************************
+/// Main Running Configurations
+/// ***************************
+
+allprojects {
+    apply plugin: "java"
+
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testImplementation group: "junit", name: "junit", version: "4.13"
+        testImplementation group: "org.hamcrest", name: "hamcrest-core", version: "1.3"
+        testImplementation group: "org.hamcrest", name: "hamcrest-all", version: "1.3"
+    }
+
+    javadoc {
+        options.tags = [
+            "spec.modifies:a:Modifies:",
+            "spec.effects:a:Effects:",
+            "spec.requires:a:Requires:",
+            "spec.specfield:a:Specfield:",
+            "spec.derivedfield:a:Derived Field:"
+        ]
+    }
+
+    compileJava {
+        options.encoding = "UTF-8"
+        options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Werror"
+    }
+
+    compileTestJava {
+        options.encoding = "UTF-8"
+        options.compilerArgs << "-Xlint:unchecked" << "-Werror"
+    }
+}
+
+/// ********************
+/// Testing + Assertions
+/// ********************
+
+allprojects {
+    // We use assertions in checkReps, so enable them everywhere
+    tasks.withType(JavaExec) {
+        enableAssertions = true
+    }
+
+    tasks.withType(Test) {
+        enableAssertions = true
+    }
+
+    // Print out lots of info about tests to aid in debugging
+    test {
+        testLogging {
+            events "failed", "skipped"
+            setShowStandardStreams true
+            setShowExceptions true
+            exceptionFormat "full"
+        }
+    }
+}

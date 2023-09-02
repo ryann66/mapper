@@ -1,0 +1,13 @@
+CreateGraph g1
+ListNodes g1
+AddNode g1 bravo
+ListNodes g1
+#add to back
+AddNode g1 delta
+ListNodes g1
+#add to front
+AddNode g1 alpha
+ListNodes g1
+#add to middle
+AddNode g1 charlie
+ListNodes g1

@@ -1,0 +1,6 @@
+CreateGraph g1
+ListNodes g1
+AddNode g1 n1
+ListNodes g1
+AddNode g1 n2
+ListNodes g1

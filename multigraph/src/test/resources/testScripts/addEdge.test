@@ -1,0 +1,20 @@
+CreateGraph g1
+AddNode g1 p
+AddNode g1 c
+ListChildren g1 p
+ListChildren g1 c
+AddEdge g1 p c e1
+ListChildren g1 p
+ListChildren g1 c
+AddEdge g1 p c e2
+ListChildren g1 p
+ListChildren g1 c
+AddEdge g1 c p e3
+ListChildren g1 p
+ListChildren g1 c
+#self connecting edges
+AddNode g1 n1
+AddEdge g1 n1 n1 e4
+ListChildren g1 n1
+AddEdge g1 n1 n1 e5
+ListChildren g1 n1

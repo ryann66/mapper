@@ -1,0 +1,32 @@
+task runPathfinder(type: JavaExec) {
+    mainClass = "pathfinder/textInterface/Pathfinder"
+    standardInput = System.in
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task scriptTests(type: Test) {
+    group "verification"
+    filter {
+        includeTestsMatching "pathfinder.scriptTestRunner.*"
+    }
+}
+
+task junitTests(type: Test) {
+    group "verification"
+    filter {
+        includeTestsMatching "pathfinder.junitTests.*"
+    }
+}
+
+dependencies {
+    implementation project(':multigraph')
+    implementation 'org.jetbrains:annotations:20.1.0'
+    implementation 'org.jetbrains:annotations:20.1.0'
+    implementation 'org.jetbrains:annotations:20.1.0'
+}
+
+tasks.withType(Test) {
+    // This causes any testing tasks to fail tests that call System.exit(),
+    // instead of crashing the testing system as would happen by default.
+    systemProperty 'java.security.manager', 'pathfinder.testUtils.ExitHandler'
+}

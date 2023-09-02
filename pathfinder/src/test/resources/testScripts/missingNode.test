@@ -1,0 +1,13 @@
+# Attempt to find a path with missing nodes
+
+CreateGraph mg
+
+FindPath mg A B
+
+AddNode mg A
+
+FindPath mg A B
+
+AddNode mg B
+
+FindPath mg B C

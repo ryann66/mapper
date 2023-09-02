@@ -1,0 +1,20 @@
+# Check pathfinding to current location
+
+CreateGraph mg
+
+AddNode mg A
+
+FindPath mg A A
+
+AddEdge mg A A 1.0
+
+FindPath mg A A
+
+AddNode mg B
+AddNode mg C
+AddEdge mg A B 1.0
+AddEdge mg B A 1.0
+AddEdge mg B C 1.0
+AddEdge mg C A 1.0
+
+FindPath mg A A

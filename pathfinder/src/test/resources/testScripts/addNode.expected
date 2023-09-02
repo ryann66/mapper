@@ -1,0 +1,6 @@
+created multigraph g1
+g1 contains:
+added node n1 to g1
+g1 contains: n1
+added node n2 to g1
+g1 contains: n1 n2

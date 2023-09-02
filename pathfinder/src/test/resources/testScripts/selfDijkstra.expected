@@ -1,0 +1,23 @@
+# Check pathfinding to current location
+
+created multigraph mg
+
+added node A to mg
+
+path from A to A:
+total cost: 0.000
+
+added edge 1.000 from A to A in mg
+
+path from A to A:
+total cost: 0.000
+
+added node B to mg
+added node C to mg
+added edge 1.000 from A to B in mg
+added edge 1.000 from B to A in mg
+added edge 1.000 from B to C in mg
+added edge 1.000 from C to A in mg
+
+path from A to A:
+total cost: 0.000

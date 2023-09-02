@@ -1,0 +1,16 @@
+created multigraph g1
+added node alpha to g1
+added node bravo to g1
+added node charlie to g1
+the children of alpha in g1 are:
+added edge kilo from alpha to bravo in g1
+the children of alpha in g1 are: bravo(kilo)
+#add to back
+added edge lima from alpha to charlie in g1
+the children of alpha in g1 are: bravo(kilo) charlie(lima)
+#add to front
+added edge mike from alpha to alpha in g1
+the children of alpha in g1 are: alpha(mike) bravo(kilo) charlie(lima)
+#test secondary sort
+added edge november from alpha to bravo in g1
+the children of alpha in g1 are: alpha(mike) bravo(kilo) bravo(november) charlie(lima)

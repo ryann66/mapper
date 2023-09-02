@@ -1,0 +1,29 @@
+# Test multiple paths existing
+
+CreateGraph mg
+
+AddNode mg A
+AddNode mg B
+AddNode mg x1
+AddNode mg x2
+AddNode mg y1
+AddNode mg y2
+
+AddEdge mg A x1 7.0
+AddEdge mg x1 x2 7.0
+AddEdge mg x2 B 7.0
+AddEdge mg A y1 8.0
+AddEdge mg y1 y2 8.0
+AddEdge mg y2 B 8.0
+
+FindPath mg A B
+
+# Test asymmetric shorter path
+
+AddNode mg z1
+AddNode mg z2
+AddEdge mg A z1 9.0
+AddEdge mg z1 z2 9.0
+AddEdge mg z2 B 2.0
+
+FindPath mg A B

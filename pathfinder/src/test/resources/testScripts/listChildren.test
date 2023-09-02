@@ -1,0 +1,16 @@
+CreateGraph g1
+AddNode g1 alpha
+AddNode g1 bravo
+AddNode g1 charlie
+ListChildren g1 alpha
+AddEdge g1 alpha bravo 3
+ListChildren g1 alpha
+#add to back
+AddEdge g1 alpha charlie 1
+ListChildren g1 alpha
+#add to front
+AddEdge g1 alpha alpha 2
+ListChildren g1 alpha
+#test secondary sort
+AddEdge g1 alpha bravo 4
+ListChildren g1 alpha

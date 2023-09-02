@@ -1,0 +1,13 @@
+created multigraph g1
+g1 contains:
+added node bravo to g1
+g1 contains: bravo
+#add to back
+added node delta to g1
+g1 contains: bravo delta
+#add to front
+added node alpha to g1
+g1 contains: alpha bravo delta
+#add to middle
+added node charlie to g1
+g1 contains: alpha bravo charlie delta

@@ -1,0 +1,20 @@
+created multigraph g1
+added node p to g1
+added node c to g1
+the children of p in g1 are:
+the children of c in g1 are:
+added edge e1 from p to c in g1
+the children of p in g1 are: c(e1)
+the children of c in g1 are:
+added edge e2 from p to c in g1
+the children of p in g1 are: c(e1) c(e2)
+the children of c in g1 are:
+added edge e3 from c to p in g1
+the children of p in g1 are: c(e1) c(e2)
+the children of c in g1 are: p(e3)
+#self connecting edges
+added node n1 to g1
+added edge e4 from n1 to n1 in g1
+the children of n1 in g1 are: n1(e4)
+added edge e5 from n1 to n1 in g1
+the children of n1 in g1 are: n1(e4) n1(e5)

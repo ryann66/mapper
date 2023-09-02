@@ -1,0 +1,22 @@
+# Test finding path against node direction
+
+created multigraph mg
+
+added node A to mg
+added node B to mg
+added edge 1.000 from B to A in mg
+
+path from A to B:
+no path found
+
+added node C to mg
+added node D to mg
+added edge 5.000 from A to D in mg
+added edge 5.000 from D to C in mg
+added edge 5.000 from C to B in mg
+
+path from A to B:
+A to D with weight 5.000
+D to C with weight 5.000
+C to B with weight 5.000
+total cost: 15.000

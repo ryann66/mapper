@@ -1,0 +1,45 @@
+/*
+ * Author: Ryan Nelson
+ * Provided as is without any warranty
+ */
+
+/* background divider style */
+#directions {
+    height:100%;
+    width:100%;
+    border-radius:5px;
+    border: 1px rgb(0,0,0) solid;
+    background: rgb(245, 230, 66, 0.5);
+}
+
+/* header style */
+#directionsHeader {
+    height:30px;
+    width:100%;
+    text-align: center;
+    font-size:28px;
+    font-weight:bold;
+    border-bottom: 1px rgb(0,0,0) solid;
+}
+
+/* container for the list of directions */
+#directionsListContainer {
+    height:calc(100% - 34px);
+    width:calc(100% - 4px);
+    padding:2px;
+    overflow:auto;
+}
+
+/* styles for displaying the background box for directions */
+#direction {
+    font-size:20px;
+    width:calc(100% - 10px);
+    margin:auto;
+    margin-bottom:4px;
+    margin-top:4px;
+    border-radius:8px;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:4px;
+    background:rgb(235, 192, 52, 0.4)
+}

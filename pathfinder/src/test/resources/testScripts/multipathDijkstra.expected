@@ -1,0 +1,37 @@
+# Test multiple paths existing
+
+created multigraph mg
+
+added node A to mg
+added node B to mg
+added node x1 to mg
+added node x2 to mg
+added node y1 to mg
+added node y2 to mg
+
+added edge 7.000 from A to x1 in mg
+added edge 7.000 from x1 to x2 in mg
+added edge 7.000 from x2 to B in mg
+added edge 8.000 from A to y1 in mg
+added edge 8.000 from y1 to y2 in mg
+added edge 8.000 from y2 to B in mg
+
+path from A to B:
+A to x1 with weight 7.000
+x1 to x2 with weight 7.000
+x2 to B with weight 7.000
+total cost: 21.000
+
+# Test asymmetric shorter path
+
+added node z1 to mg
+added node z2 to mg
+added edge 9.000 from A to z1 in mg
+added edge 9.000 from z1 to z2 in mg
+added edge 2.000 from z2 to B in mg
+
+path from A to B:
+A to z1 with weight 9.000
+z1 to z2 with weight 9.000
+z2 to B with weight 2.000
+total cost: 20.000

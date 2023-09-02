@@ -1,0 +1,13 @@
+task scriptTests(type: Test) {
+  group "verification"
+  filter {
+    includeTestsMatching "multigraph.scriptTestRunner.*"
+  }
+}
+
+task junitTests(type: Test) {
+  group "verification"
+  filter {
+    includeTestsMatching "multigraph.junitTests.*"
+  }
+}

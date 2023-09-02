@@ -1,0 +1,17 @@
+# Test finding path against node direction
+
+CreateGraph mg
+
+AddNode mg A
+AddNode mg B
+AddEdge mg B A 1.0
+
+FindPath mg A B
+
+AddNode mg C
+AddNode mg D
+AddEdge mg A D 5.0
+AddEdge mg D C 5.0
+AddEdge mg C B 5.0
+
+FindPath mg A B

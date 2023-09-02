@@ -1,0 +1,19 @@
+# Find path to node that is not connected
+
+CreateGraph mg
+
+AddNode mg a
+AddNode mg b
+AddNode mg c
+AddNode mg x
+AddNode mg y
+AddNode mg z
+
+AddEdge mg a b 1
+AddEdge mg b c 1
+AddEdge mg c a 1
+AddEdge mg x y 5
+AddEdge mg y z 5
+AddEdge mg z x 5
+
+FindPath mg a z

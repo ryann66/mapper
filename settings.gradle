@@ -1,0 +1,5 @@
+rootProject.name = 'mapper'
+
+include 'multigraph'
+include 'pathfinder'
+include 'mapper-server'

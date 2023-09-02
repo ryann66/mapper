@@ -1,0 +1,14 @@
+# Attempt to find a path with missing nodes
+
+created multigraph mg
+
+unknown: A
+unknown: B
+
+added node A to mg
+
+unknown: B
+
+added node B to mg
+
+unknown: C

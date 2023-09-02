@@ -1,0 +1,101 @@
+/*
+ * Copyright (C) 2023 Soham Pardeshi.  All rights reserved.  ***REMOVED***
+ * ***REMOVED***
+ * ***REMOVED***
+ * ***REMOVED***
+ * ***REMOVED***
+ * ***REMOVED***
+ * ***REMOVED***
+ * ***REMOVED***
+ */
+
+/*
+CSS file used by the Application
+
+It provides placement and style information for the components in the app
+and only exists for aesthetic purposes. The app would work just "fine" if this
+file was empty.
+*/
+
+#app {
+    height:100%;
+}
+
+/* container box for map */
+#mapContainer {
+    margin-left: 0px;
+    margin-right: 5px;
+    width: calc(100% - 5px);
+    height: 100%;
+}
+
+/* container box for directions list */
+#listContainer {
+    width: calc(100% - 7px);
+    height: calc(100% - 2px);
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+/* needed for dynamic scaling size of map */
+#map {
+    height:100%;
+}
+
+/* Sets size of map, which has class name "leaflet-container" */
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* centers the title */
+#app-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    height: 40px;
+}
+
+/* centers selection buttons */
+#buttons {
+    text-align:center;
+    height: 150px;
+    margin-top:10px;
+    margin-bottom:0px;
+}
+
+/* Gives margin space to combo boxes */
+select {
+    margin-left:6px;
+}
+
+/* Gives margin spaces to buttons */
+button {
+    margin:4px;
+    margin-top:0px;
+}
+
+/* Containing box for two columns */
+.float-container {
+    width:max(900px, 90%);
+    height:max(400px, calc(100% - 210px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.float-child {
+    height:100%;
+}
+
+/* floating column for the map */
+.float-child.map {
+    width:75%;
+    float:left;
+}
+
+/* floating column for the directions list */
+.float-child.directions {
+    width:25%;
+    float:right;
+}

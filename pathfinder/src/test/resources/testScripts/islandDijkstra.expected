@@ -1,0 +1,20 @@
+# Find path to node that is not connected
+
+created multigraph mg
+
+added node a to mg
+added node b to mg
+added node c to mg
+added node x to mg
+added node y to mg
+added node z to mg
+
+added edge 1.000 from a to b in mg
+added edge 1.000 from b to c in mg
+added edge 1.000 from c to a in mg
+added edge 5.000 from x to y in mg
+added edge 5.000 from y to z in mg
+added edge 5.000 from z to x in mg
+
+path from a to z:
+no path found
