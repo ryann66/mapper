@@ -1,3 +1,8 @@
+/*
+ * Author: Ryan Nelson
+ * Provided as is without any warranty
+ */
+
 package multigraph;
 
 import java.util.List;

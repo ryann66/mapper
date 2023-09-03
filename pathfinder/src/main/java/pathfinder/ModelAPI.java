@@ -1,12 +1,5 @@
 /*
- * Copyright (C) 2023 Soham Pardeshi.  All rights reserved.  ***REMOVED***
- * ***REMOVED***
- * CSE 331 for use solely during Autumn Quarter 2022 for purposes of
- * ***REMOVED***
- * ***REMOVED***
- * ***REMOVED***
- * ***REMOVED***
- * ***REMOVED***
+ * Copyright (C) 2023 Soham Pardeshi.  All rights reserved.
  */
 
 package pathfinder;
@@ -16,14 +9,14 @@ import pathfinder.datastructures.Path;
 import java.util.Map;
 
 /*
-***REMOVED***
-***REMOVED***
-***REMOVED***
-***REMOVED***
+In the pathfinder homework, the text user interface calls these methods to talk
+to your model. In the campus paths homework, your graphical user interface
+will ultimately make calls to these methods (through a web server) to
+talk to your model the same way.
 
-***REMOVED***
-***REMOVED***
-***REMOVED***
+This is the power of the Model-View-Controller pattern, two completely different
+user interfaces can use the same model to display and interact with data in
+different ways, without requiring a lot of work to change things over.
 */
 
 /**

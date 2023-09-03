@@ -1,3 +1,8 @@
+/*
+ * Author: Ryan Nelson
+ * Provided as is without any warranty
+ */
+
 package pathfinder.junitTests;
 
 import org.junit.Test;

@@ -1,12 +1,6 @@
 /*
- * Copyright (C) 2023 Soham Pardeshi.  All rights reserved.  ***REMOVED***
- * ***REMOVED***
- * CSE 331 for use solely during Autumn Quarter 2022 for purposes of
- * ***REMOVED***
- * ***REMOVED***
- * ***REMOVED***
- * ***REMOVED***
- * ***REMOVED***
+ * Author: Ryan Nelson
+ * Provided as is without any warranty
  */
 
 package mapper;
@@ -125,12 +119,6 @@ public class SparkServer {
             }
             return response;
         });
-
-        //418 joke endpoint
-        get("/coffee", ((request, response) -> {
-            halt(418, "I'm a teapot!");
-            return response;
-        }));
 
         //404 page not found handler
         notFound((request, response) -> {
